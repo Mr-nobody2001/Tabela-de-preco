@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 500px) {
+    /* Barra de rolagem */
+
+    body::-webkit-scrollbar {
+        width: 16px;
+        /* width of the entire scrollbar */
+    }
+
+    body::-webkit-scrollbar-track {
+        background: var(--cor0);
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: var(--cor0);
+        /* color of the scroll thumb */
+        border-radius: 50px;
+        /* roundness of the scroll thumb */
+        border: 3px solid var(--cor0);
+        /* creates padding around scroll thumb */
+    }
+
+    button:hover{
+        cursor: pointer;
+
+        /* Backround */
+        background-image: none;
+        background-color: rgb(255, 255, 255);
+        border: 0.5px solid var(--cor5);
+        color: var(--cor5);
+    }
+
+    .buttonE:hover {
+        cursor: pointer;
+
+        /* Backround */
+        background-color: var(--cor5);
+        border: 0.5px solid rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+    }
+
+    #div1 {
+        width: 250px;
+    }
+
+    .fig1 {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    li{
+        height: 40px;
+    }
+
+    .liE {
+        height: 70px;
+
+        font-size: 2.5em;
+    }
+
+    /* Configurações de texto */
+    .fig1 {
+        width: 24%;
+        z-index: 1;
+    }
+
+    .fig2 {
+        display: inline-block;
+        position: absolute;
+        bottom: -30px;
+        left: 0px;
+        z-index: 0;
+    }
+
+    body {
+        padding-top: 30px;
+    }
+
+    /* Configurações de corpo */
+
+    #div1 {
+        /* Posicionamento */
+        flex-direction: row;
+
+        /* Tamanho */
+        width: 250px;
+    }
+
+    #divG {
+        /* Tamanho */
+        width: 97%;
+
+        /* Posicionamento */
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        top: 230px;
+        z-index: 1;
+    }
+
+    .divS {
+        /* Espaçamento */
+        margin-bottom: 30px;
+        padding: 25px;
+
+        /* Tamanho */
+        /* height: 330px; */
+
+        /* Posicionamento */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .divSE {
+        /* Background */
+        background-image: linear-gradient(var(--cor4), var(--cor5));
+
+        /* Texto */
+        color: rgb(255, 255, 255);
+
+        /* Tamanaho */
+        height: 370px;
+    }
+
+    button {
+        /* Background */
+        border-radius: 5px;
+        width: 100%;
+        border: none;
+        background-image: linear-gradient(90deg, var(--cor4), var(--cor5));
+
+        /* Espaçamento */
+        margin-top: 35px;
+
+        /* Tamanaho */
+        height: 50px;
+
+        /* Texto */
+        color: rgb(255, 255, 255);
+        letter-spacing: 1px;
+    }
+
+    .buttonE {
+        /* Background */
+        background-color: rgb(255, 255, 255);
+        background-image: none;
+
+        /* Texto */
+        color: var(--cor2);
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    #divG {
+        /* Tamanho */
+        width: 85%;
+
+        top: 200px;
+    }
+
+    li{
+        height: 60px;
+    }
+
+    .liE {
+        /* Texto */
+        font-size: 3.5em;
+    
+        /* Tamanho */
+        height: 120px;
+    }
+
+    #div1 {
+        width: 250px;
+    }
+
+    .divS {
+        /* Espaçamento */
+        padding: 20px;
+
+        /* Tamanho */
+        height: 460px;
+    }
+
+    .divSE {
+        /* Tamanho */
+        height: 500px;
+    }
+
+}

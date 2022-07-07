@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+/* Configurações gerais */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+}
+
+:root {
+    --cor0: rgb(246, 246, 254);
+    --cor1: rgb(179, 181, 198);
+    --cor2: rgb(109, 112, 141);
+    --cor3: rgb(73, 76, 95);
+    --cor4: rgb(163, 168, 240);
+    --cor5: rgb(105, 111, 221);
+
+    --fonte: Montserrat;
+}
+
+/* Configurações de texto */
+
+h1 {
+    /* Texto */
+    color: var(--cor2);
+
+    /* Espaçamento */
+    margin-bottom: 40px;
+}
+
+h2 {
+    /* Texto */
+    font-size: 1em;
+    color: var(--cor3);
+}
+
+.h2E {
+    color: rgb(255, 255, 255);
+}
+
+p {
+    /* Texto */
+    color: var(--cor1);
+}
+
+span {
+    font-size: 0.5em;
+
+    margin-right: 3px;
+}
+
+li {
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Texto */
+    color: var(--cor3);
+
+    list-style-type: none;
+
+    /* Espaçamento */
+    height: 60px;
+}
+
+.liE {
+    /* Texto */
+    font-size: 3.5em;
+
+    /* Tamanho */
+    height: 120px;
+}
+
+.liES {
+    /* Texto */
+    color: rgb(255, 255, 255);
+}
+
+li > p {
+    /* Posicionamento */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--cor3);
+}
+
+.btE {
+    border-top: 0.5px solid rgb(255, 255, 255);
+}
+
+.bt {
+    border-top: 0.5px solid var(--cor1);
+}
+
+.bbE {
+    border-bottom: 0.5px solid rgb(255, 255, 255);
+}
+
+.bb {
+    border-bottom: 0.5px solid var(--cor1);
+}
+
+.fig1 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    width: 45%;
+}
+
+.fig2 {
+    display: none;
+}
+
+/* Configurações de adaptação de tela */
+
+body {
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* Tamanho */
+    width: 100%;
+    min-width: 330px;
+
+
+    /* Background */
+    background-color: var(--cor0);
+
+    /* Espaçamento */
+    padding-top: 70px;
+}
+
+/* Range */
+
+#range {
+    -webkit-appearance: none;
+    outline: none;
+    background-color: var(--cor4);
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+#range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3.5px solid var(--cor4);
+
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#range::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #000;
+
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* Configurações de corpo */
+
+#div1 {
+    /* Posicionamento */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Tamanho */
+    width: 65%;
+}
+
+#divG {
+    /* Tamanho */
+    width: 85%;
+    height: auto;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 230px;
+}
+
+.divS {
+    /* Background */
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px rgba(94, 94, 94, 0.1);
+    ;
+
+    /* Espaçamento */
+    margin-bottom: 40px;
+    padding: 30px;
+
+    /* Texto */
+    text-align: center;
+
+    /* Tamanho */
+    height: auto;
+    width: 100%;
+}
+
+.divSE {
+    /* Background */
+    background-image: linear-gradient(var(--cor4), var(--cor5));
+
+    /* Texto */
+    color: rgb(255, 255, 255);
+}
+
+button {
+    /* Background */
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    background-image: linear-gradient(90deg, var(--cor4), var(--cor5));
+
+    /* Espaçamento */
+    margin-top: 35px;
+
+    /* Tamanaho */
+    height: 50px;
+
+    /* Texto */
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+}
+
+.buttonE {
+    /* Background */
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+
+    /* Texto */
+    color: var(--cor2);
+}

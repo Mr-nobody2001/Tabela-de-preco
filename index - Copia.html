@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Pricing</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.m.css">
+    <link rel="stylesheet" href="style.d.css">
+</head>
+
+<body onload="interatividade()">
+    <h1>Our Pricing</h1>
+
+    <picture>
+        <source media="(min-width:500px)" srcset="./assets/images/bg-top.svg" class="fig1">
+        <img src="bg-top-mobile.png" alt="#" class="fig1">
+    </picture>
+
+    <div id="div1">
+        <div>
+            <p>Annually</p>
+        </div>
+
+        <div>
+            <input type="range" name="payment" title="paymaent" id="range" min="1" max="2">
+        </div>
+
+        <div>
+            <p>Monthly</p>
+        </div>
+    </div>
+
+    <div id="divG">
+        <div class="divS">
+            <h2>Basic</h2>
+
+            <ul>
+                <li class="liE"></li>
+                <li class="bt bb">500 GB Storage</li>
+                <li>2 Users Allowed</li>
+                <li class="bt bb">Send up to 3 GB</li>
+                <button>LEARN MORE</button>
+            </ul>
+        </div>
+
+        <div class="divS divSE">
+            <h2 class="h2E">Professional </h2>
+
+            <ul>
+                <li class="liE"><p class="liES"></li>
+                <li class="btE bbE liES">1 TB Storage</li>
+                <li class="liES">5 Users Allowed</li>
+                <li class="btE bbE liES">Send up to 10 GB</li>
+                <button class="buttonE">LEARN MORE</button>
+            </ul>
+        </div>
+
+        <div class="divS">
+            <h2>Master </h2>
+
+            <ul>
+                <li class="liE"></li>
+                <li class="bt bb">2 TB Storage</li>
+                <li>10 Users Allowed</li>
+                <li class="bt bb">Send up to 20 GB</li>
+                <button>LEARN MORE</button>
+            </ul>
+        </div>
+    </div>
+
+    <figure>
+        <img src="bg-bottom.svg" alt="#" class="fig2">
+    </figure>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
