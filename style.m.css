@@ -91,6 +91,10 @@ li > p {
     color: var(--cor3);
 }
 
+.divSE .liE > p {
+    color: rgb(255, 255, 255);
+}
+
 .btE {
     border-top: 0.5px solid rgb(255, 255, 255);
 }
@@ -202,7 +206,6 @@ body {
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 5px rgba(94, 94, 94, 0.1);
-    ;
 
     /* Espaçamento */
     margin-bottom: 40px;
@@ -221,7 +224,7 @@ body {
     background-image: linear-gradient(var(--cor4), var(--cor5));
 
     /* Texto */
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255); 
 }
 
 button {
